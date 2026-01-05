@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Coatings | Elite Plastering & Painting</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <div class="logo-text">Precision<span>Coatings</span></div>
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact" class="nav-cta">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Elite Plastering & Painting Excellence</h1>
+            <p>Transform your space with master craftsmanship. <span class="highlight">15+ years</span> of delivering flawless finishes for residential and commercial properties across the region.</p>
+            
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Book Free Consultation</a>
+                <a href="#gallery" class="btn btn-secondary"><i class="fas fa-images"></i> View Our Portfolio</a>
+            </div>
+            
+            <div class="trust-badges">
+                <div class="badge floating" style="animation-delay: 0s;">
+                    <i class="fas fa-award"></i>
+                    <span>Master Craftsmen</span>
+                </div>
+                <div class="badge floating" style="animation-delay: 0.2s;">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Fully Insured</span>
+                </div>
+                <div class="badge floating" style="animation-delay: 0.4s;">
+                    <i class="fas fa-clock"></i>
+                    <span>On Time, Every Time</span>
+                </div>
+                <div class="badge floating" style="animation-delay: 0.6s;">
+                    <i class="fas fa-star"></i>
+                    <span>Rated 4.9/5 Stars</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Masterful Transformations</h2>
+                <p>Witness the dramatic before-and-after results of our precision plastering and painting work. Quality that speaks for itself.</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="plastering">Plastering</button>
+                <button class="filter-btn" data-filter="painting">Painting</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item visible" data-category="plastering residential">
+                    <div class="before-after-container">
+                        <div class="before-label">Before</div>
+                        <div class="after-label">After</div>
+                        <img class="before-img" src="https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Ceiling before plastering">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Ceiling after plastering">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Victorian Ceiling Restoration</h3>
+                        <p>Complete restoration of ornate plasterwork in a heritage property, returning it to its original grandeur.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item visible" data-category="painting residential">
+                    <div class="before-after-container">
+                        <div class="before-label">Before</div>
+                        <div class="after-label">After</div>
+                        <img class="before-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Exterior before painting">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Exterior after painting">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Modern Exterior Makeover</h3>
+                        <p>Complete exterior repaint with premium weather-resistant coatings and contemporary color scheme.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item visible" data-category="plastering commercial">
+                    <div class="before-after-container">
+                        <div class="before-label">Before</div>
+                        <div class="after-label">After</div>
+                        <img class="before-img" src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Commercial space before">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Commercial space after">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Office Complex Renovation</h3>
+                        <p>Large-scale plastering and finishing for a corporate office renovation with tight deadlines.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item visible" data-category="painting residential">
+                    <div class="before-after-container">
+                        <div class="before-label">Before</div>
+                        <div class="after-label">After</div>
+                        <img class="before-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Interior before painting">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Interior after painting">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Luxury Penthouse Interior</h3>
+                        <p>Full interior painting with custom color matching and premium finishes for a luxury penthouse.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item visible" data-category="plastering residential">
+                    <div class="before-after-container">
+                        <div class="before-label">Before</div>
+                        <div class="after-label">After</div>
+                        <img class="before-img" src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Wall before plastering">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Wall after plastering">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Wall Surface Perfection</h3>
+                        <p>Complete wall replastering and smoothing for a flawless finish ready for decoration.</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item visible" data-category="painting commercial">
+                    <div class="before-after-container">
+                        <div class="before-label">Before</div>
+                        <div class="after-label">After</div>
+                        <img class="before-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Commercial before painting">
+                        <img class="after-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Commercial after painting">
+                    </div>
+                    <div class="gallery-item-info">
+                        <h3>Retail Space Refresh</h3>
+                        <p>Complete commercial painting project for a retail space with minimal business disruption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Our professional plastering and painting team">
+                    <div class="experience-badge">
+                        <span>15+</span>
+                        <span>Years Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>Craftsmanship Perfected Over Decades</h2>
+                    <p>Founded with a passion for perfection, Precision Coatings has evolved from a small family operation to the region's most trusted plastering and painting specialist. Our journey is built on a foundation of integrity, skill, and an unwavering commitment to quality.</p>
+                    <p>We believe that exceptional spaces begin with flawless surfaces. Our master craftsmen bring decades of combined experience to every project, ensuring results that not only meet but exceed expectations.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Master Craftsmen</h4>
+                                <p>Our team consists of fully certified professionals with specialized training in both traditional and modern techniques.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>5-Year Guarantee</h4>
+                                <p>We stand behind our work with an industry-leading 5-year guarantee on all plastering and painting services.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Clean & Efficient</h4>
+                                <p>We maintain immaculate worksites and respect your property, ensuring minimal disruption and thorough cleanup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Begin Your Transformation</h2>
+                <p>Ready to transform your space? Contact us today for a free, no-obligation consultation and quote. We respond within 2 hours during business hours.</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Smith" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="(123) 456-7890" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type *</label>
+                            <select id="project-type" class="form-control" required>
+                                <option value="" disabled selected>Select your project type</option>
+                                <option value="plastering">Plastering</option>
+                                <option value="painting">Painting</option>
+                                <option value="both">Both Plastering & Painting</option>
+                                <option value="consultation">Consultation Only</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Please describe your plastering or painting project, including approximate size and any specific requirements..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit Enquiry</button>
+                    </form>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Call Us Directly</h4>
+                            <p>(555) 123-4567</p>
+                            <p>Mon-Fri: 7:30am-6pm | Sat: 8am-3pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Us</h4>
+                            <p>quotes@precisioncoatings.com</p>
+                            <p>Response within 2 hours during business hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WhatsApp Instant Quote</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>Send photos for instant preliminary estimates</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-area">
+                        <h3><i class="fas fa-map-marker-alt"></i> Our Service Area</h3>
+                        <ul>
+                            <li>Metro City & Suburbs</li>
+                            <li>North District</li>
+                            <li>South Region</li>
+                            <li>Eastern Corridor</li>
+                            <li>Western Counties</li>
+                            <li>Commercial Zones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Precision<span>Coatings</span></div>
+                    <p>Elite plastering and painting contractors delivering master craftsmanship and flawless finishes across the region for over 15 years.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#gallery">Our Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Get a Quote</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Trade Street, Building City, BC 12345</p>
+                    <p><i class="fas fa-phone-alt"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@precisioncoatings.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 7:30am-6pm | Sat: 8am-3pm</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Precision Coatings. All Rights Reserved. | Master Craftsmen | Fully Insured & Licensed</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
